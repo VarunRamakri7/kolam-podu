@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Kolam Podu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="header">
+    <div class="title-main">Kolam Podu</div>
+    <div class="title-sub">Draw the pattern</div>
+  </div>
+
+  <div id="canvas-container">
+    <canvas id="game-canvas"></canvas>
+
+    <div id="completion-overlay">
+      <div class="complete-label">Kolam Complete</div>
+      <div id="touch-count" class="touch-count">1</div>
+      <div class="touch-label">lifts</div>
+      <button id="try-again-btn" class="try-again">Try Again</button>
+    </div>
+  </div>
+
+  <div id="instructions">Trace the dotted path — lift as few times as possible</div>
+
+  <div id="pattern-selector"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>
